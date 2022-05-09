@@ -10,6 +10,7 @@
     - Notes
         - [Makefile的执行](Makefile/Markdown/2022-03-27-Makefile-Run-make.md)
         - [规则和目标](Makefile/Markdown/2022-03-27-Makefile-Rule-and-target.md)
+        - [规则的命令](Makefile/Markdown/2022-03-27-Makefile-Recipes-in-rules.md)
         - [使用变量](Makefile/Markdown/2022-03-27-Makefile-Use-variables.md)
 
 ---
