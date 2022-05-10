@@ -13,6 +13,7 @@
         - [规则的命令](Makefile/Markdown/2022-03-27-Makefile-Recipes-in-rules.md)
         - [使用变量](Makefile/Markdown/2022-03-27-Makefile-Use-variables.md)
         - [条件执行](Makefile/Markdown/2022-03-27-Makefile-Conditionals.md)
+        - [内嵌函数](Makefile/Markdown/2022-03-27-Makefile-Functions.md)
 
 ---
 
