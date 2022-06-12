@@ -165,7 +165,7 @@ if-changed-cond = $(newer-prereqs)$(cmd-check)$(check-FORCE)
 
     该函数会检查 **命令行** 是否有变化。
 
-    - **\$(cmd_\$@)** 替换后为 **\$(cmd_foo)**，该变量从文件 **.foo.cmd** 中获取，记录的是 **上一次的命令行指令**。该变量被下列语句加载到 **Makefile** 中。
+    - **\$(cmd_\$\@)** 替换后为 **\$(cmd_foo)**，该变量从文件 **.foo.cmd** 中获取，记录的是 **上一次的命令行指令**。该变量被下列语句加载到 **Makefile** 中。
 
         ```
         # read saved command lines for existing targets
