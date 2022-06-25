@@ -1,4 +1,4 @@
-# 内核工具 **conf**
+# 实例分析：配置管理工具 **conf**
 
 工具 **conf** 的源码位于内核 **scripts\kconfig** 的目录下，用于管理内核的配置选项。
 
@@ -10,7 +10,7 @@
 scripts/kconfig/conf  --defconfig=arch/arm/configs/vexpress_defconfig Kconfig
 ```
 
-2. 首先进行参数解析。
+2. 参看源码，首先进行参数解析。
 
 ```
 while ((opt = getopt_long(ac, av, "s", long_opts, NULL)) != -1) {
@@ -80,10 +80,10 @@ if (conf_write_autoconf(sync_kconfig) && sync_kconfig) {
 
 *备注：当前的代码中，会在 **conf_write_autoconf** 中通过 **conf_touch_deps** 函数，将每个配置宏在 **include/config/** 目录下生成单独的一个空文件，目前还不清楚这么做的目的是什么。*
 
-在此，总结下生成的几个配置文件，虽然它们都是记录的内核配置信息，但是其使用对象并不相同：
+最后，总结下生成的几个配置文件，虽然它们都是记录的内核配置信息，但是其使用对象并不相同：
 
- - **.config**：给 **conf** 工具使用。
+ - **.config**：由 **conf** 工具生成，记录了所有配置选项的状态。
 
- - **include/config/auto.conf**：给内核的 **Makefile** 文件使用。
+ - **include/config/auto.conf**：记录了所有 **Enable** 的配置选项，提供给 **Makefile** 文件使用。
 
- - **include/generated/autoconf.h**：按照 **C语言** 格式定义，给内核源代码使用。
+ - **include/generated/autoconf.h**：记录了所有 **Enable** 的配置选项，给内核源代码使用。
