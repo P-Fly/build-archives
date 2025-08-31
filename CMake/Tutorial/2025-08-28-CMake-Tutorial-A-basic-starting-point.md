@@ -6,11 +6,11 @@ https://cmake.org/cmake/help/latest/guide/tutorial/A%20Basic%20Starting%20Point.
 
  1. 编辑配置文件 **CMakeLists.txt** 生成标准的构建文件:
 
-	- **cmake_minimum_required**: 任何项目最顶层的 **CMakeLists.txt** 都必须首先指定 **CMake** 的最低版本。
+    - **cmake_minimum_required**: 任何项目最顶层的 **CMakeLists.txt** 都必须首先指定 **CMake** 的最低版本。
 
-	- **project**: 设置项目名称。
+    - **project**: 设置项目名称。
 
-	- **add_executable**: 使用指定的源代码文件创建可执行文件。
+    - **add_executable**: 使用指定的源代码文件创建可执行文件。
 
     ```
     cmake_minimum_required(VERSION 3.10)
