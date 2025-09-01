@@ -42,37 +42,28 @@ https://cmake.org/cmake/help/latest/guide/tutorial/Adding%20Usage%20Requirements
 ```
 cmake_minimum_required(VERSION 3.10)
 
-project(Tutorial VERSION 1.0)
-
-option(USE_MYMATH "Use tutorial provided math implementation" ON)
-
-add_library(tutorial_compiler_flags INTERFACE)
-target_compile_features(tutorial_compiler_flags INTERFACE cxx_std_11)
-target_link_libraries(Tutorial PUBLIC MathFunctions tutorial_compiler_flags)
-target_link_libraries(SqrtLibrary PUBLIC tutorial_compiler_flags)
-target_link_libraries(MathFunctions PUBLIC tutorial_compiler_flags)
- 
-if(USE_MYMATH)
-  add_subdirectory(MathFunctions)
-  list(APPEND EXTRA_LIBS MathFunctions)
-endif()
+project(Tutorial)
 
 add_executable(Tutorial tutorial.cxx)
 
-target_link_libraries(Tutorial PUBLIC ${EXTRA_LIBS})
+add_subdirectory(MathFunctions)
+target_link_libraries(Tutorial PUBLIC MathFunctions)
 
-target_include_directories(Tutorial PUBLIC
-                           "${PROJECT_BINARY_DIR}"
-                           )
+# 定义一个接口库 tutorial_compiler_flags，该库不包含任何源码文件
+add_library(tutorial_compiler_flags INTERFACE)
+
+# 添加编译器功能: 因为是 INTERFACE，所以依赖 tutorial_compiler_flags 的目标都会加载 cxx_std_11
+target_compile_features(tutorial_compiler_flags INTERFACE cxx_std_11)
+
+# 将 tutorial_compiler_flags 链接到 Tutorial
+target_link_libraries(Tutorial PUBLIC tutorial_compiler_flags)
 ```
 
 ## Public / Interface / Private之间的区别
 
-核心可见性模型:
-
 ![Visibility Model][1]
 
- 1. Public: 使用 PUBLIC 可见性时，相关属性会同时应用于目标自身和所有使用该目标的消费者。
+ 1. **Public**: 使用 **PUBLIC** 可见性时，相关属性会同时应用于目标自身和所有使用该目标的消费者。
 
     ```
     target_include_directories(mylib PUBLIC
@@ -92,7 +83,7 @@ target_include_directories(Tutorial PUBLIC
 
     - 当依赖提供必要的运行时功能时，如果没有这些依赖，使用者的代码将无法运行。
 
- 2. Private: 使用 PRIVATE 可见性时，相关属性仅应用于目标自身，不会传播给消费者。
+ 2. **Private**: 使用 **PRIVATE** 可见性时，相关属性仅应用于目标自身，不会传播给消费者。
 
     ```
     target_include_directories(mylib PRIVATE
@@ -112,7 +103,7 @@ target_include_directories(Tutorial PUBLIC
 
     - 纯实现层面使用的工具库。
 
- 3. Interface: 使用 INTERFACE 可见性时，相关属性不应用于目标自身，只传播给消费者。
+ 3. **Interface**: 使用 **INTERFACE** 可见性时，相关属性不应用于目标自身，只传播给消费者。
 
     ```
     target_include_directories(header_only_lib INTERFACE
