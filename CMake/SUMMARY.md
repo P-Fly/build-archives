@@ -8,3 +8,4 @@
     - [Installing and Testing](Tutorial/2025-09-01-CMake-Tutorial-Installing-and-testing.md)
     - [Adding System Introspection](Tutorial/2025-09-04-CMake-Tutorial-Adding-system-introspection.md)
     - [Adding a Custom Command and Generated File](Tutorial/2025-09-04-CMake-Tutorial-Adding-a-custom-command-and-generated-file.md)
+    - [Packaging an Installer](Tutorial/2025-09-04-CMake-Tutorial-Packaging-an-installer.md)
