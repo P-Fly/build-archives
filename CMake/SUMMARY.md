@@ -9,3 +9,8 @@
     - [Adding System Introspection](Tutorial/2025-09-04-CMake-Tutorial-Adding-system-introspection.md)
     - [Adding a Custom Command and Generated File](Tutorial/2025-09-04-CMake-Tutorial-Adding-a-custom-command-and-generated-file.md)
     - [Packaging an Installer](Tutorial/2025-09-04-CMake-Tutorial-Packaging-an-installer.md)
+
+- Mastering CMake Textbook
+    - [Getting Started](MasteringCMake/2025-09-08-CMake-Books-Getting-started.md)
+    - [Writing CMakeLists Files](MasteringCMake/2025-09-09-CMake-Books-Writing-CMakeLists-files.md)
+    - [CMake Cache](MasteringCMake/2025-09-09-CMake-Books-CMake-cache.md)
