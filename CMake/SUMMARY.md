@@ -14,3 +14,4 @@
     - [Getting Started](MasteringCMake/2025-09-08-CMake-Books-Getting-started.md)
     - [Writing CMakeLists Files](MasteringCMake/2025-09-09-CMake-Books-Writing-CMakeLists-files.md)
     - [CMake Cache](MasteringCMake/2025-09-09-CMake-Books-CMake-cache.md)
+    - [Key Concepts](MasteringCMake/2025-09-15-CMake-Books-Key-concepts.md)
