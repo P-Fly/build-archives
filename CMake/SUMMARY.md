@@ -16,3 +16,4 @@
     - [CMake Cache](MasteringCMake/2025-09-09-CMake-Books-CMake-cache.md)
     - [Key Concepts](MasteringCMake/2025-09-15-CMake-Books-Key-concepts.md)
     - [Policies](MasteringCMake/2025-09-16-CMake-Books-Policies.md)
+    - [Modules](MasteringCMake/2025-09-17-CMake-Books-Modules.md)

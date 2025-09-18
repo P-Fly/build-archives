@@ -8,10 +8,6 @@
 
 ---
 
-- Autotools
-
----
-
 - KBuild
     - Documentation
         - [Linux-kernel-makefiles](Kbuild/Markdown/2022-03-27-KBuild-Documentation-Linux-kernel-makefiles.md)
