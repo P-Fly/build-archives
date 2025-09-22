@@ -42,7 +42,7 @@ https://cmake.org/cmake/help/latest/manual/cmake-language.7.html#manual:cmake-la
 对于项目中的每个目录，**CMakeLists.txt** 文件会根据 **project** 生成一个顶层 **Makefile** 文件。该项目会包含 **CMakeLists.txt** 和子目录中通过 **add_subdirectory** 定义的所有目标。如果 **EXCLUDE_FROM_ALL** 被使用，该目标将不会出现在顶层 **Makefile** 中。这对于生成与主构建过程无关的子项目非常有用。 比如某些工具，不需要在每次构建时都重新构建这部分工具。
 
 ```
-set_property(TARGET ${target} PROPERTY EXCLUDE_FROM_ALL TRUE)
+add_subdirectory(source_dir EXCLUDE_FROM_ALL)
 ```
 
 ## Configure and Generate
