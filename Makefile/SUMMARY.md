@@ -12,3 +12,6 @@
     - [条件执行](Notes/2022-03-27-Makefile-Conditionals.md)
     - [内嵌函数](Notes/2022-03-27-Makefile-Functions.md)
     - [隐含规则](Notes/2022-03-27-Makefile-Implicit-rules.md)
+
+- Tips
+    - [ifdef多条件判断](Tips/2025-09-22-Makefile-Tips-multiple-conditional-for-ifdef.md)
