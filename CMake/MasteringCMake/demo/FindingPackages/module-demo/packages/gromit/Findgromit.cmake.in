@@ -1,0 +1,10 @@
+find_path(gromit_INCLUDE_DIRS gromit.h
+          PATHS ${CMAKE_INSTALL_PREFIX}/include/gromit-@version@/
+)
+
+find_library(gromit_LIBRARY NAMES gromit
+             PATHS ${CMAKE_INSTALL_PREFIX}/lib/gromit-@version@/
+)
+
+include(FindPackageHandleStandardArgs)
+find_package_handle_standard_args(gromit DEFAULT_MSG gromit_LIBRARY gromit_INCLUDE_DIRS)
