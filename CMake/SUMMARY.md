@@ -17,6 +17,7 @@
     - [Key Concepts](MasteringCMake/2025-09-15-CMake-Books-Key-concepts.md)
     - [Policies](MasteringCMake/2025-09-16-CMake-Books-Policies.md)
     - [Modules](MasteringCMake/2025-09-17-CMake-Books-Modules.md)
+    - [Finding Packages](MasteringCMake/2025-09-24-CMake-Books-Finding-packages.md)
 
 - Tips
     - [add_subdirectory](Tips/2025-09-21-CMake-Tips-Add-subdirectory.md)

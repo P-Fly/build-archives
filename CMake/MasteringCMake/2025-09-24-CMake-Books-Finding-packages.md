@@ -30,7 +30,7 @@ find_package(<Package> [version])
 
 ### 对比
 
-| | Module mode | Config mode |
+| | Module Mode | Config Mode |
 | :-: | :-: | :-: |
 | 模块文件的实现方式 | 通过查找 **Find\<Package\>.cmake** 文件来实现 | 通过查找 **\<package\>-config.cmake** 文件来实现 |
 | 模块文件的路径 | 模块文件通常位于 **CMake** 的模块路径 | 模块文件通常存放在模块的安装路径 |
@@ -55,7 +55,7 @@ find_package(<Package> [version])
 
  - **\<XX\>_ROOT_DIR**: 在哪里找到 **\<XX\>** 安装的基目录。
 
- - **\<XX\>_VERSION_\<YY\>**: 如果结果为真，则表示找到了软件包的版本。
+ - **\<XX\>\_VERSION\_\<YY\>**: 如果结果为真，则表示找到了软件包的版本。
 
  - **\<XX\>_\<YY\>_FOUND**: 如果为假，则 **\<XX\>** 包的可选 **\<YY\>** 部分不可用。
 
