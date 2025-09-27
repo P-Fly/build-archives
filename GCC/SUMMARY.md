@@ -1,4 +1,4 @@
-# CMake
+# GCC
 
 - Documentation
     - [GCC](Documentation/gcc.pdf)
