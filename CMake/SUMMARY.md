@@ -19,7 +19,8 @@
     - [Modules](MasteringCMake/2025-09-17-CMake-Books-Modules.md)
     - [Finding Packages](MasteringCMake/2025-09-24-CMake-Books-Finding-packages.md)
     - [Custom Commands](MasteringCMake/2025-09-27-CMake-Books-Custom-commands.md)
-	- [Converting Existing Systems To CMake](MasteringCMake/2025-09-26-CMake-Books-Converting-existing-systems-to-cmake.md)
+    - [Converting Existing Systems To CMake](MasteringCMake/2025-09-26-CMake-Books-Converting-existing-systems-to-cmake.md)
+    - [Cross Compiling With CMake](MasteringCMake/2025-09-29-CMake-Books-Cross-compiling-with-cmake.md)
 
 - Tips
     - [add_subdirectory](Tips/2025-09-21-CMake-Tips-Add-subdirectory.md)
