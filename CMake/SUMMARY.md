@@ -17,6 +17,7 @@
     - [Key Concepts](MasteringCMake/2025-09-15-CMake-Books-Key-concepts.md)
     - [Policies](MasteringCMake/2025-09-16-CMake-Books-Policies.md)
     - [Modules](MasteringCMake/2025-09-17-CMake-Books-Modules.md)
+    - [Installing Files](MasteringCMake/2025-09-21-CMake-Books-Installing-files.md)
     - [Finding Packages](MasteringCMake/2025-09-24-CMake-Books-Finding-packages.md)
     - [Custom Commands](MasteringCMake/2025-09-27-CMake-Books-Custom-commands.md)
     - [Converting Existing Systems To CMake](MasteringCMake/2025-09-26-CMake-Books-Converting-existing-systems-to-cmake.md)
