@@ -1,4 +1,4 @@
-# Command Option for GCC -x
+# Overall Options for GCC -x
 
 ## 参数详解
 

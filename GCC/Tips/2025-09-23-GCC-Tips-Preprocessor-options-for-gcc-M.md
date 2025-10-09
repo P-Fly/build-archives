@@ -1,4 +1,4 @@
-# Command Option for GCC -M
+# Preprocessor Options for GCC -M
 
 ## 参数详解
 
